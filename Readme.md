@@ -5,8 +5,6 @@ Hence this will play the role of Layout manager as well.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 steve
-git
-strvre
 
 ## Get Started
 
