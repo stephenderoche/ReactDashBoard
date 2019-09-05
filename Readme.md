@@ -1,8 +1,11 @@
 # Linedata.Trading.Application
+
 Holds the code for the principal application hosting the UI from the different micro-frontend applications.
 Hence this will play the role of Layout manager as well.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+steve
+git
 
 ## Get Started
 
