@@ -1,0 +1,29 @@
+{
+  "navigation": {
+    "isNavCollapsed": true,
+    "isHoveringHamburger": false,
+    "selectedNavItem": 1,
+    "hoveringNavItem": 1
+  },
+  "currentLayout": {
+    "components": [
+      {
+        "id": "1",
+        "title": "blotter",
+        "url": "http://localhost:3001"
+      }
+    ],
+    "viewTemplate": {
+      "id": "blotter",
+      "direction": "column",
+      "layoutDefinitions": [
+        {
+          "id": "1",
+          "height": "100%",
+          "width": "100%",
+          "items": []
+        }
+      ]
+    }
+  }
+}

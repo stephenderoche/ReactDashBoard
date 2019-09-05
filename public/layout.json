@@ -1,0 +1,184 @@
+{
+  "name": "Trading Layout",
+  "componentDefinitions": [
+    {
+      "id": "dashboard",
+      "title": "Dashboard",
+      "url": "https://www.bing.com"
+    },
+    {
+      "id": "chart-1",
+      "title": "Chart 1",
+      "url": "%BLOTTER_DETAILS_BASE_URL%/?assetType=Equity&sourceId=Default%20Blotter"
+    },
+    {
+      "id": "chart-2",
+      "title": "Chart 2",
+      "url": "%BLOTTER_DETAILS_BASE_URL%/?assetType=Future&sourceId=Default%20Blotter"
+    },
+    {
+      "id": "chart-3",
+      "title": "Chart 3",
+      "url": "%BLOTTER_DETAILS_BASE_URL%/?assetType=Option&sourceId=Default%20Blotter"
+    },
+    {
+      "id": "blotter",
+      "title": "Blotter",
+      "url": "%BLOTTER_BASE_URL%"
+    },
+    {
+      "id": "detail",
+      "title": "Blotter Detail",
+      "url": "%BLOTTER_DETAILS_BASE_URL%"
+    },
+    {
+      "id": "settings",
+      "title": "settings",
+      "url": "https://www.bing.com"
+    },
+    {
+      "id": "profile",
+      "title": "profile",
+      "url": "https://www.bing.com"
+    },
+    {
+      "id": "help",
+      "title": "Help",
+      "url": "https://www.bing.com"
+    }
+  ],
+  "componentRules": [
+    {
+      "id": "nav item selected",
+      "type": "NAV_ITEM_SELECTED",
+      "navItemType": 0,
+      "targetComponentIds": [ "dashboard", "chart-1", "chart-2", "chart-3" ],
+      "targetTemplateId": "dashboard"
+    },
+    {
+      "id": "nav item selected",
+      "type": "NAV_ITEM_SELECTED",
+      "navItemType": 1,
+      "targetComponentIds": [ "blotter" ],
+      "targetTemplateId": "blotter"
+    },
+    {
+      "id": "nav item selected",
+      "type": "NAV_ITEM_SELECTED",
+      "navItemType": 2,
+      "targetComponentIds": [ "settings" ],
+      "targetTemplateId": "settings"
+    },
+    {
+      "id": "nav item selected",
+      "type": "NAV_ITEM_SELECTED",
+      "navItemType": 3,
+      "targetComponentIds": [ "profile" ],
+      "targetTemplateId": "profile"
+    },
+    {
+      "id": "nav item selected",
+      "type": "NAV_ITEM_SELECTED",
+      "navItemType": 4,
+      "targetComponentIds": [ "help" ],
+      "targetTemplateId": "help"
+    },
+    {
+      "id": "blotter group selected",
+      "type": "GROUP_SELECTED",
+      "navItemType": 1,
+      "targetComponentIds": [ "detail" ],
+      "targetTemplateId": "blotter"
+    }
+  ],
+  "viewTemplates": [
+    {
+      "id": "dashboard",
+      "direction": "column",
+      "layoutDefinitions": [
+        {
+          "id": "1",
+          "height": "100%",
+          "width": "100%",
+          "items": []
+        },
+        {
+          "id": "2",
+          "height": "100%",
+          "width": "100%",
+          "direction": "row",
+          "items": [
+            {
+              "id": "2.1",
+              "height": "100%",
+              "width": "100%",
+              "items": []
+            },
+            {
+              "id": "2.2",
+              "height": "100%",
+              "width": "100%",
+              "items": []
+            },
+            {
+              "id": "2.3",
+              "height": "100%",
+              "width": "100%",
+              "direction": "column",
+              "items": [
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blotter",
+      "direction": "column",
+      "layoutDefinitions": [
+        {
+          "id": "1",
+          "height": "100%",
+          "width": "100%",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "direction": "column",
+      "layoutDefinitions": [
+        {
+          "id": "1",
+          "height": "100%",
+          "width": "100%",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "profile",
+      "direction": "column",
+      "layoutDefinitions": [
+        {
+          "id": "1",
+          "height": "100%",
+          "width": "100%",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "direction": "column",
+      "layoutDefinitions": [
+        {
+          "id": "1",
+          "height": "100%",
+          "width": "100%",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

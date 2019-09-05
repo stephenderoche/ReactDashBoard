@@ -1,0 +1,7 @@
+FROM node:10.16-alpine
+WORKDIR /app
+COPY ./Linedata.Trading.Application .
+RUN npm install -g serve
+ENTRYPOINT sed -i 's@%BLOTTER_BASE_URL%@'"$BlotterUrl"'@g' *.json && \
+           sed -i 's@%BLOTTER_DETAILS_BASE_URL%@'"$BlotterDetailsUrl"'@g' *.json && \
+           serve -l $Port -s . -n
